@@ -1,6 +1,6 @@
 import os
 import secrets
-from PIL import Image
+import Image
 from flask import render_template, url_for, flash, redirect, request, abort
 from app import app, db, bcrypt
 from app.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm
