@@ -13,34 +13,34 @@
                 <fieldset class="form-group">
                     <legend class="border-bottom mb-4">Account Info</legend>
                     <div class="form-group">
-                        {{ form.username.label(class="form-control-label") }}
+                        {{ form.username.label(class="form-control-label custom-label") }}
     
                         {% if form.username.errors %}
-                            {{ form.username(class="form-control form-control is-invalid") }}
-                            <div class="invalid-feedback">
+                            {{ form.username(class="form-control form-control is-invalid custom-text") }}
+                            <div class="invalid-feedback custom-label">
                                 {% for error in form.username.errors %}
                                     <span>{{ error }}</span>
                                 {% endfor %}
                             </div>
                         {% else %}
-                            {{ form.username(class="form-control form-control") }}
+                            {{ form.username(class="form-control form-control custom-text") }}
                         {% endif %}
                     </div>
                     <div class="form-group">
-                        {{ form.email.label(class="form-control-label") }}
+                        {{ form.email.label(class="form-control-label custom-label") }}
                         
                         {% if form.email.errors %}
-                            {{ form.email(class="form-control form-control is-invalid") }}
-                            <div class="invalid-feedback">
+                            {{ form.email(class="form-control form-control is-invalid custom-text") }}
+                            <div class="invalid-feedback custom-label">
                                 {% for error in form.email.errors %}
                                     <span>{{ error }}</span>
                                 {% endfor %}
                             </div>
                         {% else %}
-                            {{ form.email(class="form-control form-control") }}
+                            {{ form.email(class="form-control form-control custom-text") }}
                         {% endif %}
                     </div>
-                    <div class="form-group">
+                    <div class="form-group custom-label">
                         {{ form.picture.label() }}
                         {{ form.picture(class="form-control-file") }}
                         {% if form.picture.errors %}
@@ -51,7 +51,7 @@
                     </div>
                 </fieldset><br>
                 <div class="form-group">
-                    {{ form.submit(class="btn btn-outline-info") }}
+                    {{ form.submit(class="btn custom-btn") }}
                 </div>
             </form>
     </div>
