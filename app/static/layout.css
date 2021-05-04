@@ -9,3 +9,131 @@ nav.site-header {
     background-color: #1313133f;
     color: #1DA1F2;
 }
+
+#flask-blog {
+    font-family: monospace;
+    color: #5cd3d3;
+}
+
+#below-para {
+    font-size: small;
+    color: #9f9f9f;
+}
+
+#cap {
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+                Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+                'Helvetica Neue', sans-serif;
+    color: #ff56aa;
+}
+
+.footer-strip {
+    background-color: #151515;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid #858585;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #151515;
+}
+
+.footer-col {
+    margin: 3rem auto auto auto;
+    padding: 2rem;
+    flex-shrink: 4;
+    align-self: center;
+}
+
+.footer-explore, .footer-legal, .footer-follow {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #858585;
+    text-decoration: none;
+    letter-spacing: 0px;
+    display: block;
+    font-size: 0.8rem;
+}
+
+.footer-explore:hover, .footer-legal:hover, .footer-follow:hover {
+    color: #65e8fd;
+    text-decoration: underline;
+}
+
+.section-title {
+    color: #00b2a1;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.tiny-text {
+    font-family: monospace;
+    font-size: 12px;
+    color: #949494;
+    text-align: left;
+    margin-left: 2rem;
+    text-decoration: none;;
+}
+
+.strip-item {
+    padding: 0.5rem;
+    width: 30%;
+}
+
+#github-logo {
+    width: 0.8rem;
+    margin-left: 2px;
+}
+
+#github-link {
+    text-decoration: none;
+}
+
+#insta:hover {
+    color: #ff5896;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+
+#twitter:hover {
+    color: #1DA1F2;
+}
+
+#linkedin:hover {
+    color: #0075b5;
+}
+
+@media screen and (max-width: 565px) {
+    .footer-row, .footer-strip {
+        display: block;
+        width: -webkit-fill-available;
+    }
+    .footer-col, .footer-strip {
+        margin: 0px;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    .footer-strip {
+        display: block;
+        width: -webkit-fill-available;
+    }
+    .footer-strip {
+        margin: 0px;
+        padding: 1rem;
+        text-align: -webkit-center;
+    }
+}
